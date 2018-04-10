@@ -22,8 +22,8 @@ description: "beatoraja is a Cross-platform rhythm game."
 keywords: "beatoraja, bms"
 
 # Site settings
-url: https://github.com/exch-bms2/beatoraja
-baseurl: ""
+url: https://www.gaftalk.com/beatoraja-doc
+baseurl: "https://www.gaftalk.com/beatoraja-doc"
 
 # Author settings
 author:
