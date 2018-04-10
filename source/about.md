@@ -1,11 +1,57 @@
 ---
-layout: page
-title: About
-subtitle: It's Free!
+layout: post
+title: beatoraja About
+subtitle: 
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# Features
+3 types of Long Note mode : Long Notes, Charge Notes, Hell Charge Notes, and Back Spin Scratch like iidx
 
-You can find the source code for the Jekyll new theme at: [jekyll-new](https://github.com/jglovier/jekyll-new)
-You can find the source code for Jekyll at [jekyll](https://github.com/jekyll/jekyll)
+show note timing duration (like iidx green number), judge details (fast/slow or +-ms)
+
+8 types of groove gauge (ex. assist-easy, ex-hard, ex-grade)
+
+11 types of clear lamp (ex. assist, light-assist, ex-hard, perfect, and max)
+
+real-time play speed controller (x0.25 - x4.0. auto play mode, replay mode only)
+
+Various assist options : legacy note, expand judge, bpm guide, and no mine
+
+pms judge (max 1 miss / 1 notes, combo is reset when miss)
+
+support bmson 0.2.1, 1.0.0  
+-- practice mode  
+-- mport difficulty table folder, create course with various constraint (mirror/random OK, no hispeed, and so on)
+
+import LunaticRave2 skin (now working in progress. not supporting DirectXArchive(.dxa) and DirectDrawSurface(.dds) file)  
+-- import LunaticRave2 scores (clear lamp, score. not including score verifier like scorehash)
+
+***
+
+# System Requirement
+Java Runtime Environment 1.8.0 64bit (32bit is not recomended)
+
+OpenGL 3.1- (may not work under Windows 10 + Intel HD Graphics 2000/3000. See also [https://github.com/LWJGL/lwjgl/issues/119](https://github.com/LWJGL/lwjgl/issues/119))
+
+***
+
+# How To Use
+`java -jar beatoraja.jar -(a|p|r1|r2|r3|r4|s) [BMS path]`
+
+options  
+-- a : autoplay  
+-- p : practice  
+-- r1-r4 : start replay data 1-4  
+-- s : skip configuration
+
+beatoraja uses a large amount of heap memory. So it is recommended that you use options of extending heap memory : e.g. -Xms1g -Xmx4g.
+
+On JRE 32bit, maximum heap memory size is limited to 1.4G-1.6G. See [http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#gc_heap_32bit](http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#gc_heap_32bit)
+
+**Don't use this application for playing copyrighted contents.**
+
+***
+
+# License
+GNU General Public License v3
