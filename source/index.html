@@ -13,7 +13,7 @@ body_class: home-intro
       It works on Windows, Mac OS, and Linux.</h2>
 
     <nav class="intro-actions">
-      <a id="lastest" href="{{ site.repo }}/releases" class="button" role="button" style="background-color:deepskyblue" >Download lastest</a>
+      <a id="latest" href="{{ site.repo }}/releases" class="button" role="button" style="background-color:deepskyblue" >Download latest</a>
       <a href="{{ site.repo }}/releases" class="button button-ghost" role="button">Old ver</a>
     </nav>
 
@@ -25,9 +25,9 @@ body_class: home-intro
         "https://api.github.com/repos/exch-bms2/beatoraja/releases/latest",
         null,
         function (data, status) {
-          var href = $("#lastest").attr("href");
-          $("#lastest").attr("href", data.assets[0].browser_download_url);
-          $("#lastest").text($("#lastest").text() + " (" + data.name + ")")
+          var href = $("#latest").attr("href");
+          $("#latest").attr("href", data.assets[0].browser_download_url);
+          $("#latest").text($("#latest").text() + " (" + data.name + ")")
         }
       );
     };
